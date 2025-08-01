@@ -1,11 +1,11 @@
-
 :root {
-  --background: #101326;
-  --bg: #1c1d39;
-  --yellow: #ffd700; /* Optional yellow for CTA button */
-  --text-white: #ffffff;
+  --background: #101326; /* used */
+  --bg: #1c1d39; /* used */
+  --yellow: #ffd700; /* used */
+  --text-white: #ffffff; /* used */
   --nav-clr: #212147;
-  --shadow-color: rgba(0, 0, 0, 0.2);
+  --shadow-color: rgba(0, 0, 0, 0.2); /* used */
+  --icon-bg:#101433;
 }
 /* for complete body */
 body {
@@ -17,7 +17,7 @@ body {
 }
 /* header section */
 header {
-  background-color: var(--nav-clr);
+  background-color: var(--bg);
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
@@ -44,6 +44,7 @@ nav a {
   color: var(--text-white);
   text-decoration: none;
   margin: 0 15px;
+  font-size: 15px;
   font-weight: 500;
   transition: color 0.3s;
 }
@@ -73,28 +74,33 @@ nav a:hover {
 main {
   padding: 40px;
 }
+
 /* hero section */
 .hero-section {
   background-color: var(--bg);
-  padding: 60px 20px;
+  padding: 80px 30px;
+  border-radius: 12px;
   text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px var(--shadow-color);
+  box-shadow: 0 6px 30px var(--shadow-color); 
+  margin: 5px;                 
 }
+
 .hero-section h5 {
   color: var(--yellow);
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 2px;
+  margin-bottom: 15px;
 }
 .hero-section h1 {
   color: var(--yellow);
-  font-size: 36px;
-  margin: 10px 0;
+  font-size: 42px;
+  margin: 15px 0;
 }
 .hero-section h2 {
   font-size: 24px;
   font-weight: 400;
   color: var(--text-white);
+  margin-bottom: 30px;
 }
 .my-bio p {
   max-width: 700px;
@@ -104,14 +110,40 @@ main {
   color: var(--text-white); /* or use a specific color like #ddd */
   text-align: center;
 }
+/* skills */
+.skills {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.Skills-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.Skills-icons i {
+  font-size: 50px;
+  color: #ffd700; /* Yellow icons */
+  background-color: var(--bg); 
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.Skills-icons i:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+}
+
 
 
 /* section */
 .work h3,
-.portfolio h3 {
+.portfolio h3,
+.skills h3 {
   text-align: center;
   font-size: 35px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   color: var(--yellow);
 }
 .what-i-do,
@@ -170,5 +202,6 @@ main {
     grid-template-columns: 1fr; /* 1 column on mobile */
   }
 }
+
 
 
