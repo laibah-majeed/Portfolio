@@ -73,75 +73,45 @@ nav a:hover {
 main {
   padding: 40px;
 }
-
 /* hero section */
 .hero-section {
   background-color: var(--bg);
-  padding: 80px;
-  border-radius: 12px;
+  padding: 60px 20px;
   text-align: center;
-  box-shadow: 0 6px 30px var(--shadow-color); 
-  margin: 5px;                 
+  border-radius: 10px;
+  box-shadow: 0 4px 20px var(--shadow-color);
 }
-
 .hero-section h5 {
   color: var(--yellow);
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 2px;
-  margin-bottom: 15px;
 }
 .hero-section h1 {
   color: var(--yellow);
-  font-size: 42px;
-  margin: 15px 0;
+  font-size: 36px;
+  margin: 10px 0;
 }
 .hero-section h2 {
   font-size: 24px;
   font-weight: 400;
   color: var(--text-white);
-  margin-bottom: 30px;
 }
 .my-bio p {
-  text-align: center;
-  margin: 0 auto;
-  line-height: 1.6;
-  color: var(--text-white);
-}
-/* skills */
-.skills {
-  background-color: #0c0f2e; /* Dark section background */
-  padding: 60px 20px;
+  max-width: 700px;
+  margin: 20px auto 0; /* centers and adds spacing */
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-white); /* or use a specific color like #ddd */
   text-align: center;
 }
-
-.Skills-icons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-.Skills-icons i {
-  font-size: 50px;
-  color: #ffd700; /* Yellow icons */
-  background-color: #101433; /* Icon background like navbar */
-  padding: 20px;
-  border-radius: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.Skills-icons i:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
-}
-
 
 
 /* section */
 .work h3,
-.portfolio h3,
-.skills h3 {
+.portfolio h3 {
   text-align: center;
   font-size: 35px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--yellow);
 }
 .what-i-do,
